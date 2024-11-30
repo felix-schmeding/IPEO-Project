@@ -168,5 +168,4 @@ cython_debug/
 .DS_Store
 
 *.txt
-# execption for requirements
-!pip_requirements.txt
+*.tif
