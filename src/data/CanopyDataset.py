@@ -19,9 +19,9 @@ std_inv = 1 / (std + 1e-7)
 unnormalize = T.Normalize(-mean * std_inv, std_inv)
 
 default_transform =  T.Compose([
-        T.Resize((224, 224)),
-        T.ToTensor(),
-        normalize])
+        T.ToTensor()
+        #normalize])
+        ])
 
 class CanopyDataset(Dataset):
 
@@ -61,7 +61,7 @@ class CanopyDataset(Dataset):
         label = imread(labelName)
 
         # * only if we need it, throws errors with image format
-        # if self.transforms is not None: # only apply to image, not label
-        #     img = self.transforms(img)
+        if self.transforms is not None: # only apply to image, not label
+            img = self.transforms(img)
         
         return img, label
