@@ -63,5 +63,6 @@ class CanopyDataset(Dataset):
         # * only if we need it, throws errors with image format
         if self.transforms is not None: # only apply to image, not label
             img = self.transforms(img)
+            img = img.divide(10000)
         
         return img, label
