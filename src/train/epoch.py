@@ -22,7 +22,7 @@ def train_epoch(data_loader, model, optimiser, criterion, device):
     target = target.to(torch.float32) # to match data of model
 
     #maybe this is the solution
-    data.requires_grad = True
+    #data.requires_grad = True
     # reset gradients
     optimiser.zero_grad()
 
