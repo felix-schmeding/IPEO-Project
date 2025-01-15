@@ -1,5 +1,3 @@
-Place downloaded data here: \
-./images \
-./labels 
-
-
+Unzip the downloaded data in this folder.
+./images 
+./labels
