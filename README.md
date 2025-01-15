@@ -8,6 +8,11 @@ To recreate the environment used to run this project, execute the following comm
 conda env create -f environment.yml
 ```
 
+## GitHub repository
+
+To use the code, first clone the following repo: [IPEO Project](https://github.com/felix-schmeding/IPEO-Project) \
+Then follow the next steps to ensure the data is correctly downloaded
+
 ## Dataset and File Structure
 Before running the Jupyter notebook scripts, ensure you have the following file structure in place:
 
