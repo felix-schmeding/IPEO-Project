@@ -7,7 +7,8 @@ from skimage.io import imread
 from torch.utils.data import Dataset
 
 class CanopyDataset(Dataset):
-    def __init__(self, dataset_root='../data/', split_file='../data/data_split.csv', split='train', stats_file=None):
+    def __init__(self, dataset_root='../data/dataset/', split_file='../data/dataset/data_split.csv', split='train', stats_file=None, normalize_labels=True):
+        self.normalize_labels = normalize_labels
         self.dataset_root = dataset_root
         self.stats_file = stats_file
 
