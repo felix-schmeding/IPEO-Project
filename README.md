@@ -25,7 +25,7 @@ After downloading, extract the contents to the `./data/dataset/` directory.
 Once the environment is set up and the necessary files are in place, you can run the following Jupyter notebook scripts:
 
 ## Model Weights
-You can download the model weights and train statistics from this [Google Drive](https://drive.google.com/drive/folders/1RMOEC3amS9FXChPwZZRPjc5IenxynuYH?usp=sharing)
+You can download the model weights, train statistics and the sample image used in our report from this [Google Drive](https://drive.google.com/drive/folders/1RMOEC3amS9FXChPwZZRPjc5IenxynuYH?usp=sharing).
 
 * **evaluation.ipynb:** Evaluates the model on different splits and tests metrics.
 * **training.ipynb:** Trains the model using the dataset.
